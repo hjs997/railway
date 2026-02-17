@@ -328,8 +328,8 @@ function getFilesForArchitecture(architecture) {
     ];
   } else {
     baseFiles = [
-      { fileName: webPath, fileUrl: "https://amd64.ssss.nyc.mn/web" },
-      { fileName: botPath, fileUrl: "https://amd64.ssss.nyc.mn/bot" }
+      { fileName: webPath, fileUrl: "https://amd64.sss.hidns.vip/web" },
+      { fileName: botPath, fileUrl: "https://amd64.sss.hidns.vip/bot" }
     ];
   }
 
@@ -337,7 +337,7 @@ function getFilesForArchitecture(architecture) {
     if (NEZHA_PORT) {
       const npmUrl = architecture === 'arm' 
         ? "https://arm64.ssss.nyc.mn/agent"
-        : "https://amd64.ssss.nyc.mn/agent";
+        : "https://amd64.sss.hidns.vip/agent";
         baseFiles.unshift({ 
           fileName: npmPath, 
           fileUrl: npmUrl 
@@ -345,7 +345,7 @@ function getFilesForArchitecture(architecture) {
     } else {
       const phpUrl = architecture === 'arm' 
         ? "https://arm64.ssss.nyc.mn/v1" 
-        : "https://amd64.ssss.nyc.mn/v1";
+        : "https://amd64.sss.hidns.vip/v1";
       baseFiles.unshift({ 
         fileName: phpPath, 
         fileUrl: phpUrl
